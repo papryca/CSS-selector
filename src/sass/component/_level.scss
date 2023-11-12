@@ -1,0 +1,67 @@
+.level {
+  overflow: hidden;
+  background-color: $color-border;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  text-align: center;
+
+  &__name {
+    margin-top: 10px;
+    @include font($size: 4rem);
+    color: $color-text;
+    text-align: center;
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  &__image {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto 0 auto 0;
+  }
+  &_black {
+    background-image: url("../../images/checklist-black.png");
+  }
+  &_yellow {
+    background-image: url("../../images/checklist-yellow.png");
+  }
+  &_green {
+    background-image: url("../../images/checklist-green.png");
+  }
+  &__string {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: $color-button-hover;
+    }
+
+  }
+  &__string:hover .level__number{
+    transition: all 0.3s;
+    color: $color-text-dark;
+  }
+  &__number {
+    color: $color-text;
+  }
+  &_active {
+    background-color: $color-button;
+  }
+}

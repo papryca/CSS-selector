@@ -1,0 +1,9 @@
+@mixin position($position: absolute, $top,$height,$width,$background-color, $transform: translate(-50%, -50%)) {
+  position: $position;
+  top: $top;
+  transform: $transform;
+  height:$height;
+  width:$width;
+  background-color:$background-color;
+
+}

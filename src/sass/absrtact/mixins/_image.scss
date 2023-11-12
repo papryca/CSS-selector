@@ -1,0 +1,17 @@
+@mixin image($content: "",$background-image,$width: 35px,$height: 35px,
+$background-repeat: no-repeat,$background-size: contain,$display: block,$margin: auto,
+$transform: translate(-50%, -50%),$top: 50%,$left: 50%,$position: absolute,$border-radius: 5px){
+  content:$content;
+  background-image: $background-image;
+  width: $width;
+  height: $height;
+  background-repeat: $background-repeat;
+  background-size:$background-size;
+  display:$display;
+  margin: $margin;
+  transform: $transform;
+  top: $top;
+  left: $left;
+  position: $position;
+  border-radius: 13px;
+}

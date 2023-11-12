@@ -1,0 +1,12 @@
+.apple {
+  @include image($background-image: url("../../images/apple.png"))
+}
+.apple-move {
+  @include image($background-image: url("../../images/apple.png"),$top: 30%,$left:35%)
+}
+.apple-big {
+  @include image($background-image: url("../../images/apple.png"), $height: 85px, $width: 105px)
+}
+.apple-big-move {
+  @include image($background-image: url("../../images/apple.png"), $height: 85px, $width: 105px,$top: 0,$left: 10%)
+}

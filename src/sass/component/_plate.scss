@@ -1,0 +1,23 @@
+.plate {
+  @include shape($width: 105px, $height: 85px, $background-color: $color-white);
+  border-bottom: solid 3px $color-plate-shadow;
+  position: absolute;
+}
+
+.move {
+  @include move();
+}
+
+.plate-colourful {
+  @include shape($width: 105px, $height: 85px, $background-color: $color-plate-colourful);
+}
+
+.plate::before {
+  @include shape($width: 60px, $height: 45px, $background-color: $color-white);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: solid 6px $color-plate-shadow;
+  position: absolute;
+}
+

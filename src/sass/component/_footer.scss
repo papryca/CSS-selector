@@ -1,0 +1,36 @@
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 140px;
+  margin-top: 20px;
+
+  &__year {
+    color: $color-text;
+  }
+  &__school-link {
+    height: 60px;
+    width: 120px;
+  }
+  &__school-link:hover {
+    cursor: pointer;
+  }
+  &__github-link {
+    text-decoration: none;
+    color: $color-text;
+    transition: all 0.3s;
+    font-size: 1.7rem;
+  }
+
+  &__github-link:hover {
+    cursor: pointer;
+    color: #555;
+  }
+}
+
+
+
+
+
+

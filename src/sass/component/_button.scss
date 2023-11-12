@@ -1,0 +1,10 @@
+.button {
+  height: 50px;
+  width: 130px;
+  background-color:$color-button;
+}
+.button:hover{
+  cursor: pointer;
+  background-color:$color-button-hover;
+  transition: all 0.3s;
+}

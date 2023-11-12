@@ -1,0 +1,13 @@
+.watermelon {
+  @include image($background-image: url("../../images/watermelon.png"))
+}
+.watermelon-move {
+  @include image($background-image: url("../../images/watermelon.png"),$top: 30%,$left:35%)
+}
+.watermelon-big {
+  @include image($background-image: url("../../images/watermelon.png"), $height: 85px, $width: 105px)
+}
+.watermelon-big-move {
+  @include image($background-image: url("../../images/watermelon.png"), $height: 85px, $width: 85px,$top: 0,$left: 10%)
+}
+

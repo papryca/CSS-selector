@@ -1,0 +1,166 @@
+.code {
+  margin: 0 130px 0 80px;
+  display: flex;
+
+  &__css {
+    border: solid 5px $color-border;
+    width: 450px;
+    height: 100%;
+    color: $color-text;
+
+  }
+
+  &__html {
+    border: solid 5px $color-border;
+    width: 450px;
+    height: 100%;
+    color: $color-text;
+  }
+
+  &__header {
+    border-bottom: solid 5px $color-border;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $color-code-background;
+  }
+
+  &__name {
+    padding-left: 15px;
+  }
+
+  &__language {
+    padding-right: 15px;
+  }
+
+  &__numbers {
+    padding-left: 15px;
+    line-height: 1.7;
+    background-color: $color-button;
+    display: inline-block;
+    padding-right: 10px;
+    border: 2px solid $color-border;
+  }
+
+  &__numbers-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__button {
+    background-color: $color-button;
+    box-shadow: $color-shadow;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+  }
+
+  &__input-content {
+    border-style: none;
+    margin: 10px;
+    background-color: $color-white;
+    width: 75%;
+  }
+
+  &__input-content:focus {
+    outline: none;
+  }
+
+  &__cursor:before {
+    content: '';
+    width: 2px;
+    height: 18px;
+    background: $color-text-dark;
+    display: none;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  @keyframes cursor {
+    50% {
+      background: transparent;
+    }
+  }
+
+  &_animationnot:not(:focus) + &__cursor:before {
+    display: inline-block;
+    animation: cursor 1s infinite step-end;
+  }
+
+  &_animation:not(:focus) {
+    background-color: $color-input;
+    animation: cursor 1s infinite step-end;
+  }
+
+  &__content {
+    background-color: $color-white;
+    width: 100%;
+
+    & div {
+      margin-left: 20px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      color: $color-table-corner;
+    }
+
+    & > div {
+      margin-left: 0;
+    }
+
+
+    .highlight-attr {
+      color: $color-input;
+    }
+
+    .highlight-attr-val {
+      color: $color-apple-circle;
+    }
+
+  }
+
+  &__content_html {
+    background-color: $color-code-background;
+  }
+
+  &__layout {
+    display: flex;
+  }
+
+  &__input {
+    position: relative;
+  }
+
+}
+
+.selected {
+  box-shadow: 0 0 10px 5px $color-shadow;
+}
+
+.selected-text {
+  background-color: $selected-text;
+}
+
+.wrong-animation {
+  animation: wrongAnimation 0.5s;
+}
+
+@keyframes wrongAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: $color-apple;
+  }
+  100% {
+    transform: scale(1);
+    background-color: initial;
+  }
+}

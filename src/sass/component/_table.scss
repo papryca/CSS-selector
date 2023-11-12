@@ -1,0 +1,75 @@
+.table {
+  width: 100%;
+  height: 200px;
+  margin: 10px auto 100px auto;
+  text-align: center;
+  @include font($size: 4rem);
+  color: $color-text;
+
+  &__wrapper {
+    position: relative;
+    width: 600px;
+    min-height: 150px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+  }
+  &__box {
+    width: 180px;
+    height: 60px;
+    background-color: $color-text;
+    transform: translate(-50%, -50%);
+    top: -50px;
+    right: -50px;
+    position: absolute;
+    font-size: 1rem;
+    color: $color-shadow;
+  }
+
+  &__surface {
+    @include position($top: 50%, $height: 100%, $width: 100%, $background-color: $color-table);
+    left: 50%;
+  }
+
+  &__corner {
+    @include position($top: 105%, $height: 10%, $width: 100%, $background-color: $color-table-corner);
+    left: 50%;
+  }
+
+  &__leg {
+    @include position($top: 117%, $height: 15%, $width: 5%, $background-color: $color-table-legs);
+  }
+
+  &__leg_left {
+    left: 20%;
+  }
+
+  &__leg_right {
+    right: 20%;
+  }
+
+
+  &__button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 130%;
+    left: 50%;
+  }
+  &__button-help:hover {
+    cursor: pointer;
+  }
+  &__dishes {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    gap: 9%;
+  }
+  &__dish-wrapper{
+    position: relative;
+    width: 105px;
+    height: 85px;
+  }
+}
+

@@ -1,0 +1,12 @@
+.lemon {
+  @include image($background-image:url("../../images/lemon.png"));
+}
+.lemon-move {
+  @include image($background-image:url("../../images/lemon.png"),$top: 30%,$left:35%);
+}
+.lemon-big {
+  @include image($background-image:url("../../images/lemon.png"),$height:85px,$width:105px);
+}
+.lemon-big-move {
+  @include image($background-image:url("../../images/lemon.png"),$height:85px,$width:105px,$top: 0,$left: 10%);
+}

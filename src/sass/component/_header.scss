@@ -1,0 +1,42 @@
+.header {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  &__plate {
+    display: inline-block;
+    @include shape($width: 25px, $height: 25px, $background-color: $color-white);
+    border-bottom: solid 3px $color-shadow;
+    position: absolute;
+  }
+  &__plate:hover{
+    @include move();
+  }
+
+  &__apple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 2px 2px 5px 2px;
+    border-color: $color-apple-border;
+    border-style: solid;
+    @include shape($width: 10px, $height: 10px, $background-color: $color-apple);
+  }
+
+  &__apple::after {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include shape($width: 4px, $height: 4px, $background-color: $color-apple-circle);
+  }
+
+  &__logo {
+    color: $color-text;
+    margin-left: 30px;
+  }
+}
+

@@ -1,0 +1,51 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Open sans", sans-serif;
+  background-color: $color-background;
+  display: flex;
+  gap: 0;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+}
+.left-column {
+  overflow-y: scroll;
+  height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $color-white;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-text-dark;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-scrollbar-thumb;
+    width: 5px;
+    border-radius: 10px;
+  }
+}
+.animation {
+  animation: fly 2s forwards;
+}
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -50%);
+  }
+  100% {
+    transform: translate(-450%, -50%);
+    opacity: 0;
+  }
+}
+
+
+

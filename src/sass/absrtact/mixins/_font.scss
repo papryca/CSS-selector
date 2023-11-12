@@ -1,0 +1,10 @@
+@mixin font($size, $weight: bold, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+
+
+
+

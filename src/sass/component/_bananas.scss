@@ -1,0 +1,6 @@
+.bananas {
+  @include image($background-image:url("../../images/banana.png"))
+}
+.bananas-move {
+  @include image($background-image:url("../../images/banana.png"),$top: 30%,$left:35%)
+}
