@@ -50,6 +50,6 @@ To set up and run the project locally, follow these steps:
 
 The application will open in your default browser, allowing you to explore and interact with it.
 
-### 'Screenshot'
+### `Screenshot`
 
 ![Keyboard:](docs/css_selector.png)
