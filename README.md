@@ -43,7 +43,7 @@ Runs ESLint to analyze and identify lint errors in the codebase.
 
 To set up and run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/RoierS/eCommerce-Application.git`
+1. Clone the repository: `git clone git@github.com:papryca/CSS-selector.git`
 2. Navigate to the project directory: `cd css-selector`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
