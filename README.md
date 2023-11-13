@@ -1,8 +1,4 @@
-# 🛍️🌐 eCommerce Application
-
-**_[RS School](https://rs.school/) final task project_**
-
-Welcome to our eCommerce application! This platform replicates real-world shopping experiences in a digital environment. It's a comprehensive online shopping portal that provides an interactive and seamless experience to users.
+# CSS-selector
 
 ## 📝 Description
 
@@ -14,7 +10,7 @@ This interactive web application allows users to test their CSS selector skills 
 - HTML
 - CSS
 - TypeScript 
-- ESLint 🧹
+- ESLint 
 - Jest 
 
 ## 📜 Available Scripts
